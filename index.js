@@ -21,7 +21,7 @@ const addSignature = (person) => {
     
     
     
-    // Add a click event listener to the sign now button
+    // Click event listener to the sign now button
     const signNowButton = document.getElementById("sign-now-button");
     
     const signNowHandler = () => {
@@ -35,7 +35,7 @@ const addSignature = (person) => {
     signNowButton.addEventListener("click", signNowHandler);
     
 
-    // Complete validation form
+    // Validation form
     const validateForm = () => {
         let containsErrors = false;
     
