@@ -34,9 +34,7 @@ const addSignature = (person) => {
     
     signNowButton.addEventListener("click", signNowHandler);
     
-    // Remove the click event listener that calls addSignature()
-    // No need to remove, as it's already handled when signNowHandler is added.
-    
+
     // Complete validation form
     const validateForm = () => {
         let containsErrors = false;
@@ -79,7 +77,7 @@ const addSignature = (person) => {
         toggleModal(person);
     }
     
-    // Add event listener to the sign now button for form validation
+    //Event listener
     signNowButton.addEventListener('click', validateForm);
     
     let animation = {
@@ -111,7 +109,7 @@ const addSignature = (person) => {
       setTimeout(() => {
         clearInterval(intervalId);
     
-        // Submit the form after the animation finishes
+
         signPetition.submit();
         modal.style.display = "none";
       }, 8000)
